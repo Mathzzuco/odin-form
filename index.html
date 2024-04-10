@@ -3,7 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Odin Form Page</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
   </head>
-  <body></body>
+  <body>
+    <form action="index.html" method="post">
+      <label for="first_name">First Name</label>
+      <input type="text" id="first_name" required />
+      <label for="last_name">Last Name</label>
+      <input type="text" id="last_name" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+      <label for="phone_number">Phone Number</label>
+      <input type="tel" id="phone_number" minlength="7" maxlength="15" />
+      <label for="password">Password</label>
+      <input type="password" id="password" required />
+      <label for="password">Confirm Password</label>
+      <input type="password" id="password" required />
+      <button type="submit">Create Account</button>
+    </form>
+  </body>
 </html>
