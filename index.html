@@ -6,6 +6,7 @@
     <title>Odin Form Page</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <p>
@@ -27,11 +28,12 @@
         <input type="tel" id="phone_number" minlength="7" maxlength="15" />
         <label for="password">Password</label>
         <input type="password" id="password" required />
+        <span id="password_message"></span>
         <label for="password">Confirm Password</label>
         <input type="password" id="password" required />
       </fieldset>
       <button type="submit">Create Account</button>
-      <p>Already have an account? <a>Log in</a></p>
+      <p>Already have an account? <a href="">Log in</a></p>
     </form>
   </body>
 </html>
