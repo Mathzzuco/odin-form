@@ -7,41 +7,50 @@
 
 body {
   display: flex;
+  font-family: Roboto, sans-serif;
 }
 
 header {
   height: 100vh;
-  width: 50vw;
+  flex: 1 1 auto;
+}
+
+.image-background-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   background-image: url("../img/naturebackground.jpg");
   background-repeat: no-repeat;
-  background-size: auto 100%;
-  object-fit: cover;
+  background-size: cover;
+  background-position: center;
 }
 
-header p {
+.image-credit {
   text-align: center;
-  margin-top: 94%;
   color: white;
+  margin-top: auto;
+  margin-bottom: 0.6rem;
 }
 
-header a {
+.image-background-box a {
   color: white;
 }
 
 .odin-logo-box {
   width: 100%;
-  height: 16%;
+  height: 7rem;
+  margin-top: 9.375rem;
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
-  margin-top: 34%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .odin-logo-box img {
-  max-width: 200px;
-  max-height: 90px;
+  max-width: 12.5rem;
+  max-height: 5.625rem;
   width: auto;
   height: auto;
 }
@@ -49,4 +58,36 @@ header a {
 .odin-logo-box h1 {
   font-size: 4rem;
   font-family: NorseBold;
+}
+
+.image-credit p {
+  font-size: 0.875rem;
+}
+
+main {
+  flex: 2 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+main p {
+  max-width: 15.25rem;
+}
+
+main form fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1600px) {
+  .odin-logo-box {
+    height: 9rem;
+  }
+  .odin-logo-box h1 {
+    font-size: 6rem;
+  }
+  .odin-logo-box img {
+    max-width: 16rem;
+    max-height: 7rem;
+  }
 }
