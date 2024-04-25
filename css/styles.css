@@ -26,13 +26,6 @@ header {
   background-position: center;
 }
 
-.image-credit {
-  text-align: center;
-  color: white;
-  margin-top: auto;
-  margin-bottom: 0.6rem;
-}
-
 .image-background-box a {
   color: white;
 }
@@ -60,23 +53,50 @@ header {
   font-family: NorseBold;
 }
 
+.image-credit {
+  text-align: center;
+  color: white;
+  margin-top: auto;
+  margin-bottom: 0.6rem;
+}
+
 .image-credit p {
   font-size: 0.875rem;
 }
 
 main {
+  padding: 1.25rem;
+  padding-top: 6.25rem;
   flex: 2 1 auto;
   display: flex;
   flex-direction: column;
+  gap: 1.25rem;
 }
 
 main p {
-  max-width: 15.25rem;
+  max-width: 20rem;
+}
+
+main form legend {
+  margin-bottom: 20px;
 }
 
 main form fieldset {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 12.5rem 12.5rem;
+  gap: 1.875rem 3.75rem;
+  margin: 0 -1.25rem;
+  padding: 0 1.25rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 1.875rem;
+}
+
+main form input {
+  width: 12.5rem;
+}
+
+form button {
+  margin-top: 3.125rem;
 }
 
 @media only screen and (min-width: 1600px) {

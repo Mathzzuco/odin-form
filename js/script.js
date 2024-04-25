@@ -4,7 +4,7 @@ function checkpassword(e) {
   const password = document.getElementById("password").value;
   const confirmPassword = document.getElementById("confirm_password").value;
   if (password === confirmPassword) {
-    document.getElementById("password_message").innerHTML = "";
+    document.getElementById("password_message").innerHTML = "&nbsp";
   } else {
     e.preventDefault();
     document.getElementById("password_message").innerHTML =
