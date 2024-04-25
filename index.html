@@ -38,43 +38,56 @@
       </div>
     </header>
     <main>
-      <p>
-        This is not a real online service! You know you need something like this
-        in your life to help your realize your deepest dreams. Sign up
-        <i>now</i> to get started.
-      </p>
-      <p>You <i>know</i> you want to.</p>
+      <div class="container title-wrapper">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help your realize your deepest dreams.
+          <span>Sign up <i>now</i> to get started.</span>
+        </p>
+        <p>You <i>know</i> you want to.</p>
+      </div>
       <form>
-        <fieldset>
-          <legend>Let's do this!</legend>
-          <p>
-            <label for="first_name">First Name</label>
-            <input type="text" id="first_name" required />
-          </p>
-          <p>
-            <label for="last_name">Last Name</label>
-            <input type="text" id="last_name" required />
-          </p>
-          <p>
-            <label for="email">Email</label>
-            <input type="email" id="email" required />
-          </p>
-          <p>
-            <label for="phone_number">Phone Number</label>
-            <input type="tel" id="phone_number" minlength="7" maxlength="15" />
-          </p>
-          <p>
-            <label for="password">Password</label>
-            <input type="password" id="password" required />
-            <span id="password_message">&nbsp</span>
-          </p>
-          <p>
-            <label for="confirm_password">Confirm Password</label>
-            <input type="password" id="confirm_password" required />
-          </p>
-        </fieldset>
-        <button type="submit">Create Account</button>
-        <p>Already have an account? <a href="">Log in</a></p>
+        <div class="form-wrapper">
+          <div class="container">
+            <fieldset>
+              <legend>Let's do this!</legend>
+              <div class="form-option">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" required />
+              </div>
+              <div class="form-option">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" required />
+              </div>
+              <div class="form-option">
+                <label for="email">Email</label>
+                <input type="email" id="email" required />
+              </div>
+              <div class="form-option">
+                <label for="phone_number">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone_number"
+                  minlength="7"
+                  maxlength="15"
+                />
+              </div>
+              <div class="form-option">
+                <label for="password">Password</label>
+                <input type="password" id="password" required />
+                <span id="password_message">&nbsp</span>
+              </div>
+              <div class="form-option">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" required />
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        <div class="container">
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="">Log in</a></p>
+        </div>
       </form>
     </main>
   </body>
