@@ -76,7 +76,7 @@ main {
 }
 
 .form-wrapper {
-  border-bottom: 1px solid black;
+  box-shadow: 0px 8px 16px -8px #9ca3af;
 }
 
 .container {
@@ -152,6 +152,12 @@ form button {
   border-radius: 0.45rem;
   border: none;
   margin-top: 3.125rem;
+  margin-bottom: 1.25rem;
+}
+
+.container a {
+  color: #596d48;
+  text-decoration: none;
 }
 
 @media screen and (min-height: 800px) {
