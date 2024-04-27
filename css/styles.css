@@ -71,7 +71,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
   flex: 2 1 auto;
 }
 
@@ -80,8 +80,12 @@ main {
 }
 
 .container {
-  padding: 0 2rem;
+  padding: 0 3.5rem;
   max-width: 50rem;
+}
+
+.container p {
+  font-weight: bold;
 }
 
 .title-wrapper {
@@ -93,7 +97,6 @@ main {
 .title-wrapper p {
   font-size: 1.25rem;
   line-height: 1.2;
-  font-weight: bold;
 }
 
 .title-wrapper span {
@@ -127,21 +130,32 @@ main form fieldset {
 main form label {
   font-size: 0.7rem;
   letter-spacing: 0.1rem;
-  margin-bottom: 0.25rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 main form input {
   padding-left: 0.5rem;
+  margin-top: 0.25rem;
   width: 15rem;
   height: 1.5625rem;
-  font-weight: bold;
+  border: solid 1px #e5e7eb;
+  border-radius: 4px;
+}
+
+main form input:focus {
+  outline: none;
+  border: 1px solid #3b82f6;
+  box-shadow: 5px 5px 14px -9px #696d69;
+}
+
+main form input[type="password"]:invalid {
+  border: solid 1px red;
 }
 
 main form span {
   font-size: 0.8rem;
-  color: red;
+  color: #dc2626;
 }
 
 form button {
@@ -153,11 +167,17 @@ form button {
   border: none;
   margin-top: 3.125rem;
   margin-bottom: 1.25rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  opacity: 0.9;
 }
 
 .container a {
   color: #596d48;
   text-decoration: none;
+  font-weight: bold;
 }
 
 @media screen and (min-height: 800px) {
